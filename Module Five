@@ -1,0 +1,30 @@
+MODULE FIVE: CONDITIONALS
+1. Conditional operators: 
+   1. Equals (==)
+   2. Not Equals (!=)
+   3. Greater Than (>)
+   4. Greater Than or Equal To 
+   5. Less Than, Less Than or Equal To
+   6. !=, ==, >=, <=, >, <
+
+
+Do you think any of these operators relate to AND or OR from boolean logic? How can we combine two of the other conditional operators to create a Greater Than or Equal To operator?  Can we combine these operators to specify that a “teenager” from modules two and three is in the range 13 to 19, rather than how we had falsely stated, greater than 12?
+1. Control Flow Statements
+   1. if
+   2. else if
+      - can only be used after one or more if statements
+   3. else 
+      - can only be used after one or more if statements and 0 or more else if statements
+2. Loops
+while
+- requires initial condition (counter = 0, condition: a <b), body (increment counter, change a), and final condition (counter = some number, a is not < b)  
+
+CHALLENGE ONE: 
+Let’s build a Calculator class! We will use if, else if, else, while, and conditional operators.  
+The Calculator must have the following capabilities:
+1. A plus B
+2. absolute value(A)
+3. A mod B
+4. A isEven()
+5. A times B with addition (while while)
+6. Bonus: A divided by B with subtraction
