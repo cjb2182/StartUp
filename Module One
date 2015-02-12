@@ -1,0 +1,56 @@
+MODULE 1: Unix and Vim
+1. Open your Desktop in finder so you can see what's going on 
+2. Navigate to the Desktop: cd Desktop
+3. You will now create and navigate to a series of subdirectories with the following commands: 
+   1. mkdir comp_sci
+   2. cd comp_sci
+   3. mkdir module_one
+   4. mkdir module_one
+   5. cd module_one
+   6. mkdir my_directory
+1. Now, type pwd to see your current path directory.  It should say Users/your_username/Desktop/comp_sci/module_one. Why is my_directory not in the current path?
+2. Delete the directory: rmdir my_directory
+3. Make the directory again: mkdir my_directory
+4. Create a file in my_directory with vim.  First, navigate to my_directory: cd my_directory. Then, use vim to create a file: 
+   1. vim my_file.txt 
+   2. i - to insert text
+   3. write: "This is my first file. " 
+   4. esc :w enter to save
+   5. :q  enter to quit
+   6. Note: you can combine w and q by writing :wq enter
+
+
+CHALLENGE ONE: 
+Starting in the module_one directory, without using the cd command, create a file secret_file.txt that contains the text secret file created. Then, make a copy of the file called: secret_file2.txt. What is the full path of both of those files? 
+Hint: type man pwd to learn more about the pwd command. Type q to exit the pwd documentation page. 
+
+
+CHALLENGE TWO: 
+move secret_file2.txt to a new subdirectory of my_directory called my_subdirectory. What is the new full path of secret_file2.txt?
+Hint: you need to use two commands
+
+
+CHALLENGE THREE: 
+Navigate to the directory my_directory. Make another copy of secret_file.txt and call it revealed_file.txt.  this file should be in your current directory (my_directory).  How can you do this without writing out the full path of the directory you are in? Hint: use the . (period) command to specify current directory
+
+
+MODULE 1.2: More Vim
+Vim is used to both create a file (as you just did), and to edit a file.  
+
+
+Now we will edit the file my_file.txt with the following command: vim my_file.txt
+1. Append the text end to the line using A. Then press esc to get back to reading mode..  Note that A enters editing mode at the end of the line
+2. Use I to insert the text start at the beginning of the line. 
+Now your file should have the text: start This is my first file. end
+
+
+CHALLENGE FOUR: 
+a and i  work the same as A and I but they enter editing mode at the end and beginning of a word, respectively, rather than at the end and beginning of a line. Use a to change the word file to files and use i to change the word is to tis. Press escape in between a and i commands
+
+
+CHALLENGE FIVE: 
+The x command deletes the character it is hovering over.  Use the x command to delete the word my. You will have to navigate to the word my using the arrows, and then press x two times, once for each letter
+
+
+CHALLENGE SIX: 
+The r command works similarly to x but it replaces one character.  Use r to change the T in This to a lowercase t Save the file using :wq
