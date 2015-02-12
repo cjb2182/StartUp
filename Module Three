@@ -1,0 +1,37 @@
+MODULE THREE: 
+INTEGERS
+First, let’s learn how to add or subtract two integers.  Use + for addition and - for subtraction
+To add two integers:
+int a = 1
+int b = 2
+int sum = a + b
+System.out.println(sum)
+
+
+CHALLENGE ONE:
+Write  a program that subtracts two numbers
+
+
+Now, let’s add two integers that are entered as command line arguments by a user.  We will have to cast the input arguments to integers using Integer.parseInt(argument)
+
+
+String name = args[0]
+int x = Integer.parseInt(args[1]);
+int y = Integer.parseInt(args[2]);
+int sum = x + y;
+System.out.println(name + "'s sum is " sum)
+
+
+DOUBLES:
+There are two other important operations of multiplication * and division /. What happens when you compute a / b in the above example? You expect to get an answer of 0.5 but something went wrong. We need a type called double to address this issue, and account for numbers with digits after the decimal point.  
+
+
+To divide two numbers: 
+double a = 1
+double b = 2
+double quotient = a + b
+System.out.println(quotient)
+
+
+CHALLENGE TWO: 
+Read in a name and age in years and write "Hello,  name. You are x  many seconds old"
