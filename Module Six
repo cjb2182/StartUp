@@ -1,0 +1,80 @@
+MODULE SIX: WHILE LOOPS
+While loops have an initial state, a test condition, a body, and an ending state.  Identify each component in the following while loop: 
+
+
+int counter = 0;
+int max = 5
+int a = 1;
+int b = 5;
+while (counter < max){
+        System.out.print(a+b + “ ”);
+        a = 10 * a;
+        b = b+2;
+        counter +=1;
+}
+
+
+TRACE: 
+1. counter = 0, max = 5, a = 1, b = 5: print 6
+2. counter = 1, max = 5, a = 10, b = 7: print 17
+3. counter = 2, max = 5, a = 100, b = 9, print 109
+4. counter = 3, max = 5, a = 1000, b = 11, print 1011
+5. counter = 4, max = 5, a = 10000, b = 13, print 10013
+6. counter = 5, max = 5, a = 100000, b = 15.  counter not < max → stop. 
+
+
+Final output: 6 17 109 1011 10013
+
+
+VARIATIONS: How does the output change... 
+1. if we remove the counter +=1 statement?
+2. if we change the counter +=1 statement to counter +=2? to counter +=5?
+3. if we change max to 100 and keep all else the same?
+4. if we put the print statement at the end of the loop instead of the beginning? 
+
+
+CHALLENGE ONE: STARS
+1. Draw a horizontal line of 20 stars. A horizontal line of 3 stars looks like ***
+2. Draw a vertical line of 20 stars. A vertical line of 3 stars looks like:
+*
+*
+*
+1. Draw a diagonal line of 20 stars. A diagonal line of 3 stars looks like
+        *
+          *
+            *
+1. Draw the letter W in stars
+2. Draw three rectangles aligned vertically
+        * * * *
+        *     *
+        * * * *
+        * * * *
+        *     *
+        * * * *
+        * * * *
+        *     *
+        * * * *
+           
+3. Draw three diamonds aligned vertically
+           *
+         *   *
+        *     *
+         *   *
+           *
+           *
+         *   *
+        *     *
+         *   *
+           *
+           *
+         *   *
+        *     *
+         *   *
+           *
+
+
+CHALLENGE TWO: FIBONACCI
+The Fibonacci numbers are a sequence of numbers such that each number, starting at the third number, 
+is the sum of the two numbers preceding it.  The first two numbers are 1, 1.  For example, the first 
+10 fibonacci numbers are: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55.  Print out the first 20 fibonacci numbers 
+by using a while loop.
