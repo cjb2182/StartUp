@@ -1,0 +1,54 @@
+MODULE EIGHT
+
+STRINGS
+- In Java, a String is a sequence of characters.  Unlike “int” or “double”, String is an object (that’s why its capitalized).  
+
+CONCATENATION: String a = “A”;
+String b = “B”;
+String ab = a+b; // “AB”
+
+SUBSTRINGS
+String cs = “computer science”
+cs.substring(0,1) → “c”
+cs.substring(1,4) → “omp”
+
+REPLACE
+cs.replace(“c”,”k”) → komputer skienke
+
+CHALLENGE: 
+ACSL CODING QUESTION FROM 2006-2007: 
+
+PROBLEM: The Swedish Chef is a character from the Muppet Show.  He spoke in his one language.  The language is a combination of English, mock-Swedish and nonsense.  Your task is to create an English to Chef translator.  The language rules in priority order are as follows:
+1. All sentences end with "Bork Bork Bork!"
+2. Replace all occurrences of "THE" with "ZEE"
+3. Replace all occurrences of "AN" with "UN"
+4. Replace all occurrences of "AU" with "OO"
+5. Replace all occurrences of "A" not at the end of a word with "E"
+6. Replace all occurrences of "OW" with "OO"
+7. Replace all occurrences of  "O" with "U"
+8. Replace all occurrences of "IR" with "UR"
+9. Replace all occurrences of "TION" with "SHUN"
+10. Replace all occurrences of "E" at the end of a word with "E-A"
+11. Replace the first occurrence of "I" in a word other than at the start of the word with "EE".  Note #8 and #9 are done first. 
+
+INPUT: There will be 5 input lines.  Each line will contain a string representing a sentence
+
+OUTPUT: For each input line, print the Swedish Chef translation of that string
+
+SAMPLE INPUT:
+1. I WILL GO.
+2. THE ANTEATER ATE IT.
+3. THEY ARE ALL CHAIRMEN.
+4. AUTHORS OFTEN WRITE NOVELS.
+5. SWEN USED AN IRREGULAR VERB
+
+SAMPLE OUTPUT
+1. I VEELL GU. BORK BORK BORK!
+2. ZEE UNTEETER ETE-A IT. BORK BORK BORK!
+3. ZEEY ERE-A ELL CHEURMEE. BORK BORK BORK!
+4. OOTHURS UFFTEE VREETE-A NUFELS. BORK BORK BORK!
+5. SVEE USED UN URREGOOLER FERB. BORK BORK BORK!
+
+Note that the toUpperCase() string method will be helpful.  Take a look at the API!
+
+
