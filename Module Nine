@@ -1,0 +1,40 @@
+MODULE NINE: Introduction to Objects and Object-Oriented Design
+
+In order to understand objects in Java, let’s first consider objects in the real-world.  For example, a bicycle object:
+
+How do we describe a bicycle?
+- size
+- color
+- current wheel speed
+- current gear setting
+- …
+
+What are the actions a bicycle can do?
+- speed up
+- slow down (brake)
+- turn right
+- …
+
+The description listed in the first set of bullet points describes the state of the object. Some of these descriptors don’t change (size, color), and some do (current wheel speed, current gear setting).  
+
+The description listed in the second set of bullet points describes the behavior of the object.  All of these descriptors cause a change in the current state of the object.  For example, if we speed up then the current wheel speed will be higher than before.  
+
+An object in java is used to model an object in the real-world. 
+
+An object’s state is stored in its variables and object’s behavior is stored in its functions
+
+
+CHALLENGE ONE: Let’s make a Bicycle class: Bicycle.java.  Use our brainstorming above to decide on the variables  and functions your Bicycle class will have. 
+
+CHALLENGE TWO: Every object has a constructor, which enables the programmer to create multiple instances of the same object.  Let’s look at the following code example:
+
+String example1 = “hello”;
+String example2 = “world”;
+
+String is an object in java.  example1 is an instance of the String object.  example2 is also an instance of the String object.  We can perform any of the String operations listed in the API on example1 and on example2.  
+
+To create an instance of our Bicycle class, we will type:
+Bicycle bicycle1 = new Bicycle();
+
+Then we can perform any of the Bicycle operations we defined in challenge one on bicycle1. 
+Let’s review your code from Challenge One to make sure you have an appropriate constructor.  Then, let’s instantiate a Bicycle object in a BicycleTester.java class. 
