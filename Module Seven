@@ -1,0 +1,57 @@
+MODULE SEVEN: FUNCTIONS 
+Functions organize your code to enable re-use on different inputs.
+
+SCOPE
+Let’s look at this sample program AdditionCalculator.java:
+
+public class AdditionCalculator{
+  public static int add(int x, int y){
+      int sum = x +y;
+		  return sum;
+  }
+
+  public static void main(String args[]){
+		  int num_one = Integer.parseInt(args[0]);
+		  int num_two = Integer.parseInt(args[1]);
+		  int result = add(num_one,num_two);
+		  System.out.println(result);
+  }
+}
+
+Suppose we execute the following two commands: javac AdditionCalculator.java
+java AdditionCalculator 5 3
+
+This results in the following:
+args[0] is set to the string “5”
+args[1] is set to the string “3”
+num_one is set to the int 5 (which is the string args[0] parsed to an int)
+num_two is set to the int 3
+result is set to the result of the function call add(5,3)
+
+Within the add function:
+int x is set to the first value passed into add(), which is an integer with value 5.
+int y is set to the second value passed into add(), which is an integer with value 3
+add computes int sum = 5+3 = 8
+add returns 8
+
+Back to main:
+result is set to 8
+print 8
+
+Note that the variables num_one and num_two do not exist in the add function because they are out of scope.  Likewise, the variables x and y do not exist in main.  Each variable only exists within the brackets {} in which it is declared. 
+
+FUNCTION PROTOTYPE:
+The first function we have seen is public static void main(String args[])
+-	public/private keyword
+-	static
+-	do not use instance variables (all variables are defined for every “instance”- we will go into more detail about instances when we discuss object oriented programming). 
+-	static methods can call other static methods
+-	return type: void
+-	parameters: args[]
+
+
+CHALLENGE ONE: 
+Let’s look at your calculator class and see how we can improve it with functions. First, we will place your addition code into a function. We will make an add function that takes two integers as input and two strings as input.  How are they different? Create a function for all of the existing calculator functionality.
+
+BONUS CHALLENGE TWO:
+Implement the divide function using a while loop and the add function.  Place the divide function in a loop.  
